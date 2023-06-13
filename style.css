@@ -1,0 +1,39 @@
+.container {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 100vh;
+  grid-template-columns: repeat(4, 120px);
+  grid-template-rows: repeat(5, 80px);
+}
+
+button {
+}
+
+.span-2 {
+  grid-column: span 2;
+  height: 80px;
+}
+
+.span-1 {
+  grid-column: 1;
+}
+
+.output {
+  grid-column: 1/-1;
+  background: #010101d0;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.top-opperand {
+  color: #fff;
+}
+
+.bottom-opperand {
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 1.5rem;
+}
